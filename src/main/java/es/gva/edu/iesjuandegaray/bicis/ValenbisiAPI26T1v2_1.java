@@ -46,47 +46,12 @@ public class ValenbisiAPI26T1v2_1 {
                 System.out.println();
 
                 // BUCLE SENCILLO
-                for (int i = 0; i < features.length(); i++) {
-
-                    JSONObject feature = features.getJSONObject(i);
-
-                    System.out.println("----- ESTACIÓN -----");
-
-                    // ATRIBUTOS
-                    if (feature.has("attributes")) {
-
-                        JSONObject attr = feature.getJSONObject("attributes");
-
-                        String nombre = attr.getString("address");
-                        int bicis = attr.getInt("available");
-                        int anclajes = attr.getInt("free");
-
-                        System.out.println("Nombre: " + nombre);
-                        System.out.println("Bicis disponibles: " + bicis);
-                        System.out.println("Anclajes libres: " + anclajes);
-
-                    } else {
-                        System.out.println("Sin atributos");
-                    }
-
-                    // GEOMETRÍA
-                    if (feature.has("geometry")) {
-
-                        JSONObject geo = feature.getJSONObject("geometry");
-
-                        double x = geo.optDouble("x", 0);
-                        double y = geo.optDouble("y", 0);
-
-                        System.out.println("X: " + x);
-                        System.out.println("Y: " + y);
-
-                    } else {
-                        System.out.println("Sin geometría");
-                    }
-
-                    System.out.println("--------------------------");
-                }
-            }
+               
+			
+			
+			
+			
+			}
 
         } catch (IOException e) {
             System.out.println("Error en la petición HTTP:");
