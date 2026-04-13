@@ -45,7 +45,7 @@ public class ValenbisiAPI26T1v2_1 {
                 System.out.println("Número de estaciones: " + features.length());
                 System.out.println();
 
-                // BUCLE SENCILLO
+                // BUCLE RECORRE VECTOR FEATURES MOSTRANDO LOS DATOS SOLICITADOS-.
                
 			
 			
